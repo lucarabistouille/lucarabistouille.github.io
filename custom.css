@@ -1,0 +1,131 @@
+body {
+    font-family: 'EB Garamond', 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
+    /* background-color: #080026;
+    color: white; */
+}  
+
+.latex-dark-custom {
+	--body-color: hsl(0, 0%, 86%);
+	--body-bg-color: #080026;
+	/* --link-visited: hsl(196 80% 77%);
+	--link-focus-outline: hsl(215, 63%, 73%); */
+	--pre-bg-color: hsl(0, 1%, 25%);
+	--kbd-bg-color: hsl(0, 0%, 16%);
+	--kbd-border-color: hsl(210, 5%, 70%);
+	--table-border-color: white;
+	--sidenote-target-border-color: hsl(0, 0%, 59%);
+	--footnotes-border-color: hsl(0, 0%, 59%);
+	--proof-symbol-filter: invert(80%);
+  }
+
+/* Test right */
+.text-right { text-align: right; }
+
+
+/*Footer*/
+footer {
+    margin-top:2em;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: hsl(0, 0%, 59%);  
+    color:hsl(0, 0%, 59%); 
+}
+
+/* Floating images */
+.img-right {
+    float:right;
+    padding:10px;
+    clear: both;
+    
+}
+
+/* Numbering sections in articles */
+body {
+    counter-reset: chapter 0 section 0 ;
+  }
+  h2:not(.notoc) {
+    counter-reset: section 0;
+    counter-increment: chapter;
+  }
+  h3 {
+    counter-increment: section;
+  }
+
+  h2:not(.notoc):before {
+    content: counter(chapter)' '
+  }
+  h3:before {
+    content: counter(chapter)"." counter(section)' ';
+  }
+
+/* adapted from awsm.css
+source at https://github.com/schollz/awsm.css/
+*/
+a {
+	color: color('link');
+	text-decoration: none;
+	transition: color 300ms;
+	&:visited {
+		color: color('link-visited');
+	}
+	&:hover,
+	&:focus {
+		color: color('link-hover');		
+		transition: color 0ms;
+	}
+}
+
+.nav {
+	margin: 2em 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #232226;  
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;	
+		li {
+			display: inline-block;
+			margin: 0 5px;
+			
+			color: color('disabled');
+		}
+	}
+	a {
+		&:visited {
+			color: color('link');
+		}
+		&:hover,
+		&:focus {
+			color: color('link-hover');
+		}
+	}
+}
+
+/* multilang pages**/
+.lang{
+	margin: -2em 0 0 1em;
+    font-style: italic;
+	
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;	
+		li {
+			display: inline-block;
+			margin: 0 5px;
+			
+			color: color('disabled');
+		}
+	}
+	a {
+		&:visited {
+			color: color('link');
+		}
+		&:hover,
+		&:focus {
+			color: color('link-hover');
+		}
+	}
+}

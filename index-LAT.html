@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luc Absil</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="font.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body class="latex-dark-custom">
+  <div class="nav">
+    <ul>
+      <li><a href="#">⌂</a></li>
+    </ul>
+  </div>  
+  <header>
+    <img src="luc_absil.png" width="100px" class="img-right">    
+    <h1>Luc Absil</h1>
+    <div class="lang">
+      <ul>
+        <li><a href="index.html">FR</a></li>
+        <li><a href="index-EN.html">EN</a></li>
+        <li><a href="index-DE.html">DE</a></li>
+        <li><a href="#"><strong>LAT</strong></a></li>
+      </ul>
+    </div>
+
+    <p>Salve. Hic potes notitias de vita professionale vel de operibus personalibus invenire.</p>
+  </header>
+
+  <main><article>
+    <nav role="navigation">
+      <h2 class="notoc">Conspectu materiæ</h2>
+      <ol>
+        <li><a href="#carr">Curriculum</a></li>
+        <ol>
+          <li><a href="#carr-pub">Epistolæ scientificæ</a></li>
+          <li><a href="#carr-info">Alia notitia</a></li>
+        </ol>
+        <li><a href="#pers">Opera personales</a></li>
+      </ol>
+    </nav>    
+
+    <h2 id="carr">Curriculum</h2>
+    <h3 id="carr-pub">Epistolæ scientificæ</h3>
+
+    <!-- Generated from zotero-->
+    <div class="csl-bib-body" style="line-height: 1.35; ">
+        <div class="csl-entry" style="clear: left; ">
+          <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[1]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">L. Absil, Y. Balland, F.P.D. Santos, Long-range temperature-controlled transport of ultra-cold atoms with an accelerated lattice, New J. Phys. 25 (2023) 073010. <a href="https://doi.org/10.1088/1367-2630/ace3ea">https://doi.org/10.1088/1367-2630/ace3ea</a>.</div>
+        </div>
+        <div class="csl-entry" style="clear: left; ">
+          <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[2]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">Y. Balland, L. Absil, F.P. dos Santos, Quectonewton local force sensor, (2023). <a href="https://doi.org/10.48550/arXiv.2310.14717">https://doi.org/10.48550/arXiv.2310.14717</a>.</div>
+        </div>
+    </div>  
+    </p>
+
+    <h3 id="carr-info">Alia notitia</h3>
+    <p>In Youtube licet dissertationes meæ (lingua francica) spectare.</p>
+
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/UYVDNPsRgaI?si=cpytBikRGE1TFyXj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center> 
+    
+    <h2 id="pers">Opera mea</h2>
+  </article></main>
+
+  <footer>
+    <p>
+      © Luc Absil, 2024<br>
+      </p>
+  </footer>
+</body>
+
+
+
+
+    
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script async src="prism/prism.js"></script>
+
+  <script async defer data-domain="latex.now.sh" src="https://plausible.io/js/plausible.js"></script>
+</body>
+
+</html>
