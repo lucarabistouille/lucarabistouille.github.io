@@ -1,0 +1,120 @@
+body {
+  max-width:120ch;
+}
+
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white; /* or your site's background */
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* subtle shadow for depth */
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 3em;
+  color: rgb(88, 0, 0);
+}
+
+.etym {
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+  color: #444;
+  font-size: 0.75em;
+  padding-left: 3em;
+}
+
+.etym::before {
+  content: " Etym. ";
+  font-style: normal;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.75em;
+  color: #888;
+  transform: translateY(10%);
+  background-color: rgba(230, 240, 255, 0.4);
+  border-bottom: 1px solid #4a90e2;
+  border-radius: 6px;
+}
+
+.prov {
+  position: relative;
+  display: inline-block;
+  color: #444;
+  padding-left: 3em;
+}
+
+.prov::before {
+  content: " Prov. ";
+  font-style: normal;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.75em;
+  color: #888;
+  transform: translateY(10%);
+  background-color: rgba(230, 240, 255, 0.4);
+  border-bottom: 1px solid #e24a4a;
+  border-radius: 6px;
+}
+
+.fam {
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+  color: #444;
+  padding-left: 3em;
+}
+
+.fam::before {
+  content: " Fam. ";
+  font-style: normal;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.75em;
+  color: #888;
+  transform: translateY(10%);
+  background-color: rgba(230, 240, 255, 0.4);
+  border-bottom: 1px solid #e24a4a;
+  border-radius: 6px;
+}
+
+ul {
+  list-style: none; 
+  padding-left: 0;
+  font-size: 1.5em;
+  background-color: rgba(231, 231, 231, 0.315);
+  margin-bottom: 2em;
+}
+
+ul ul {
+  list-style: none; 
+  font-size: 1em;
+  padding-left: 2em;
+  border-left: 2px solid #ccc; 
+}
+
+ul ul ul {
+  list-style: none; 
+  font-size: 0.9em;
+  padding-left: 2.5em;
+}
+
+ul ul ul ul {
+  list-style: none; 
+  font-size: 0.8em;
+  padding-left: 2.5em;
+}
+
+.red-angle {
+  color: red;
+  font-style: italic; /* optional */
+}
