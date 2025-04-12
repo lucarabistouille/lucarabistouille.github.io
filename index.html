@@ -1,109 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luc Absil</title>
-
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="font.css" />
-  <link rel="stylesheet" href="custom.css" />
-</head>
-
-<body class="latex-dark-custom">
-  <div class="nav">
-    <ul>
-      <li><a href="#">⌂</a></li>
-    </ul>
-  </div>  
-  <header>
-    <img src="luc_absil.png" width="100px" class="img-right">    
-    <h1>Luc Absil</h1>
-    <div class="lang">
-      <ul>
-        <li><a href="#"><strong>FR</strong></a></li>
-        <li><a href="index-EN.html">EN</a></li>
-        <li><a href="index-DE.html">DE</a></li>
-        <li><a href="index-LAT.html">LAT</a></li>
-      </ul>
-    </div>
-
-     <!--<p>Bienvenue sur mon site personnel. Ci-dessous quelques informations professionnelles à mon sujet et quelques projets personnels qui me tiennent à cœur.</p>-->
-  </header>
-
-  <main><article>
-    <nav role="navigation">
-      <h2 class="notoc">Table des matières</h2>
-      <ol>
-        <li><a href="#carr">Informations professionnelles</a></li>
-        <ol>
-          <li><a href="#carr-pub">Publications</a></li>
-          <li><a href="#carr-info">Autres informations</a></li>
-        </ol>
-        <!--<li><a href="#pers">Projets personnels</a></li>-->
-      </ol>
-    </nav>    
-
-    <h2 id="carr">Informations professionnelles</h2>
-    <ul>
-    <li>2024-… : Post-doctorant à l'Université d'Innsbruck (groupe de R. Grimm)</li>
-    <li>2023 : Thèse à l'Observatoire de Paris sous la direction de F. Pereira dos Santos.</li>
-    </ul>
-    
-    <h3 id="carr-pub">Publications</h3>
-
-    <!-- Generated from zotero-->
-    <div class="csl-bib-body" style="line-height: 1.35; ">
-      <div class="csl-entry" style="clear: left; ">
-        <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[1]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">L. Absil, Y. Balland, F.P.D. Santos, Long-range temperature-controlled transport of ultra-cold atoms with an accelerated lattice, New J. Phys. 25 (2023) 073010. <a href="https://doi.org/10.1088/1367-2630/ace3ea">https://doi.org/10.1088/1367-2630/ace3ea</a>.</div>
-      </div>
-      <div class="csl-entry" style="clear: left; ">
-        <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[2]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">Y. Balland, L. Absil, F.P. dos Santos, Quectonewton local force sensor, (2023). <a href="https://doi.org/10.48550/arXiv.2310.14717">https://doi.org/10.48550/arXiv.2310.14717</a>.
-      </div>
-  </div>
-  </p>
-
-    <h3 id="carr-info">Autres informations</h3>
-    <p>Ma soutenance de thèse (en français) peut être visionnée sur youtube :</p>
-
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/UYVDNPsRgaI?si=cpytBikRGE1TFyXj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center> 
-  </article></main>
-
-  <footer>
-    <p>
-      © Luc Absil, 2024<br>
-      </p>
-  </footer>
-</body>
-
-
-
-
-    
-
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'],],
-      },
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Luc Absil" />
+  <title>Nouveau jardin des Racines Allemandes</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
     }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
-
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script async src="prism/prism.js"></script>
-
-  <script async defer data-domain="latex.now.sh" src="https://plausible.io/js/plausible.js"></script>
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="LaTeX.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Nouveau jardin des Racines Allemandes</h1>
+<p class="author">Luc Absil</p>
+</header>
+<!--  -->
+<hr />
+<p>Un recueil personnel de vocabulaire et de notes prises au gré de ma lecture du Herkunftswörterbuch (Duden), organisé par famille étymologique sur le modèle d’anciens manuels.</p>
+<div class="toc">
+<p><span class="german"><a href="#a">A</a> <a href="#b">B</a> <a href="#c">C</a> <a href="#d">D</a> <a href="#e">E</a> <a href="#f">F</a> <a href="#g">G</a> <a href="#h">H</a> <a href="#i">I</a> <a href="#j">J</a> <a href="#k">K</a> <a href="#l">L</a> <a href="#m">M</a> <a href="#n">N</a> <a href="#o">O</a> <a href="#p">P</a> <a href="#q">Q</a> <a href="#r">R</a> <a href="#s">S</a> <a href="#t">T</a> <a href="#u">U</a> <a href="#v">V</a> <a href="#w">W</a> <a href="#x">X</a> <a href="#y">Y</a> <a href="#z">Z</a></span></p>
+<div class="controls">
+<p><input type="range" id="fontSlider" min="0" max="3" step="1" value="0" oninput="updateFont(this.value)"> <span id="fontName" class="font-label">Antiqua</span></p>
+</div>
+<button id="toggleDark" onclick="toggleDarkMode()">
+🌙
+</button>
+</div>
+<hr />
+<h2 id="a"><span class="german">A</span></h2>
+<ul>
+<li><span id="Aal" class="german"><strong>der Aal</strong></span>, l’anguille
+<ul>
+<li><span class="etym">cf. lat. anguilla, gr. égchelys</span></li>
+<li><span id="aalen" class="german"><strong>aalen</strong></span>, se prélasser<br />
+</li>
+<li><em><span class="german">aal<a href="#glatt">glatt</a></span></em>, glissant comme une anguille
+<ul>
+<li><span class="prov"><em><span class="german">sich drehen und winden wie ein Aal</span></em>, se faufiler comme une anguille</span></li>
+<li><span class="prov"><em><span class="german">sich aalglatt herauswinden</span></em>, s’en sortir par une pirouette</span><br />
+</li>
+</ul></li>
+</ul></li>
+<li><em><span class="german">der Aar</span></em>, l’aigle (poétique) d’où <span id="Adler" class="german"><strong>der Adler</strong></span> (Edel-aar), l’aigle (mot courant)</li>
+<li><em><span class="german">der Aas</span></em>, la charogne
+<ul>
+<li><em><span class="german">mit etw aasen</span></em>, gaspiller qch<br />
+</li>
+<li><span class="fam">salaud</span></li>
+<li><span class="prov"><em><span class="german">es war kein Aas zu sehen</span></em>, il n’y avait pas un chat</span><br />
+</li>
+</ul></li>
+<li><span id="ab" class="german"><strong>ab</strong></span>+D à partir de
+<ul>
+<li><span class="etym">du lat. ab</span></li>
+<li><span id="Abend" class="german"><strong>das Abend</strong></span>,
+<ul>
+<li><span class="etym">cf. angl. <em>eve/ning</em>, IE <em>*epi</em>, norrois <em>aptann</em></span></li>
+<li>la soirée ; originellement la partie <em>la plus tardive du jour</em> , et donc aussi la veille :
+<ul>
+<li><em>das <a href="#Feier">Feier</a>abend</em>, la soirée après le travail</li>
+<li><em>das <a href="#Heilig">Heilig</a>abend</em>, la vigile de Noël</li>
+<li><span class="german"><em>das Sonnabend</em></span>, le samedi (All. du Nord)</li>
+<li><span id="Abendmahl" class="german"><strong>das Abend<a href="#mahl">mahl</a></strong></span>, la Cène (Bible de Luther)<br />
+</li>
+<li>(adv.) <span id="abendlich" class="german"><strong>abendlich</strong></span>, du soir</li>
+<li><span id="abends" class="german"><strong>abends</strong></span>, ce/le soir (adv.).</li>
+</ul></li>
+<li>l’Occident
+<ul>
+<li><span id="Abendland" class="german"><strong>das Abendland</strong></span>, l’Occident</li>
+</ul></li>
+</ul></li>
+<li><span id="aber" class="german"><strong>aber</strong></span>, mais
+<ul>
+<li><em>die Aber-<a href="#glaube">glaube</a></em>, la superstition, <em>aberglaübig</em><br />
+</li>
+<li><em>der Aber-<a href="#witz">witz</a></em>, l’absurdité<br />
+</li>
+</ul></li>
+</ul></li>
+<li><span id="Abenteuer" class="german"><strong>das Abenteuer</strong></span>, l’aventure
+<ul>
+<li><span class="etym">cf. fr. aventure, lat. ad-ventura événement</span></li>
+<li><em>abenteuerlich</em>, aventureux</li>
+<li><em>sich in Abenteuer begeben</em>, se lancer dans des aventures</li>
+<li><em>Abenteurer</em>, l’aventurier</li>
+</ul></li>
+<li><em>das Ad-vent</em>, l’Avent</li>
+<li><span id="Art" class="german"><strong>die Art</strong></span>, la façon (<em>einzig in seiner Art</em>), la nature, l’espèce, la manière
+<ul>
+<li><span class="etym">lat. arare, gr. aróein</span><br />
+</li>
+<li><em>die Abart</em>, la variété<br />
+</li>
+<li><em>ab-arten</em>, dégénérer (dévier de la norme) ; <em>ab-artig</em>, déviant, dingue<br />
+</li>
+</ul></li>
+<li><em>das Abc</em>, l’alphabet, l’abc
+<ul>
+<li><em>der Abc-schütze</em> (pr plaisanter) petit écolier<br />
+</li>
+</ul></li>
+<li><span id="Acker" class="german"><strong>der Acker</strong></span>, le champ
+<ul>
+<li><span class="etym">cf. gr. agrós</span></li>
+<li><span id="Ackerbau" class="german"><strong>der Ackerbau</strong></span>, l’agriculture<br />
+</li>
+<li>préfixe <em>agrar…</em></li>
+</ul></li>
+</ul>
+<h2 id="b"><span class="german">B</span></h2>
+<ul>
+<li><span id="bald" class="german"><span id="bald" class="german"><strong>bald</strong></span></span>, bientôt, vite, presque
+<ul>
+<li><span class="etym">signifiait à l’origine <em>hardi</em>, cf. l’anglais <em>bold</em>, ou encore les noms tels que Balduin, Leopold, Theobald…</span>
+<ul>
+<li><em>Rauf-bold</em>, bagarreur (cf <em>raufen</em>, se battre)</li>
+<li><em>Trunken-bold</em>, ivrogne</li>
+<li><em><a href="#Witz">Witz</a>-bold</em>, plaisantin</li>
+</ul></li>
+<li><span class="prov"><em>in Bälde</em>, dans un avenir proche</span></li>
+<li><em>baldig</em>, bientôt</li>
+</ul></li>
+<li><span id="bauen" class="german"><strong>bauen</strong></span>, construire, fabriquer ; <span id="Bau" class="german"><strong>Bau</strong></span>, la construction
+<ul>
+<li><em>ab-bauen</em>, démonter, réduire, diminuer<br />
+</li>
+<li><em>die Belegschaft abbauen</em>, réduire les effectifs<br />
+</li>
+</ul></li>
+<li><span id="binden" class="german"><strong>binden</strong></span>, nouer
+<ul>
+<li><em>ab-binden</em>, dénouer<br />
+</li>
+<li><span id="Band" class="german"><strong>das Band</strong></span>, le ruban<br />
+</li>
+<li><span id="Bund" class="german"><strong>der Bund</strong></span>, l’alliance
+<ul>
+<li><em>das Bündel</em>, le paquet</li>
+</ul></li>
+</ul></li>
+<li><em>blenden</em>,
+<ul>
+<li>éblouir
+<ul>
+<li><em>die Blende</em>, l’écran, le diaphragme<br />
+</li>
+<li><em>ab-blenden</em>, couper, s’assombrir
+<ul>
+<li><em>die Scheinwerfer abblenden</em> se mettre en code (voiture)<br />
+</li>
+</ul></li>
+</ul></li>
+<li>tromper
+<ul>
+<li><em>ver-blenden</em>, aveugler<br />
+</li>
+</ul></li>
+</ul></li>
+<li><span id="Blick" class="german"><strong>der Blick</strong></span>, le regard
+<ul>
+<li><em>das Blei</em>, le plomb (qui brille bleuâtre)<br />
+</li>
+<li><em>bleich</em>, blême<br />
+</li>
+<li><em>das Blech</em>, la tolle<br />
+</li>
+<li><span id="Blitz" class="german"><strong>der Blitz</strong></span>, l’éclair<br />
+</li>
+<li><em>der Blitzableiter</em>, le paratonnerre<br />
+</li>
+<li><em>das Blitzlicht</em>, le flash<br />
+</li>
+<li><span class="fam"><em>jemanden abblitzen lassen</em>, envoyer balader quelqu’un</span><br />
+</li>
+</ul></li>
+<li><span id="bringen" class="german"><strong>bringen</strong></span>, apporter
+<ul>
+<li><em>von etw ab-bringen</em>, détourner de qch</li>
+</ul></li>
+</ul>
+<h2 id="d"><span class="german">D</span></h2>
+<ul>
+<li><span id="Dank" class="german"><strong>der Dank (für)</strong></span>, le remerciement
+<ul>
+<li><span id="dank" class="german"><strong>dank</strong></span>, grâce à<br />
+</li>
+<li><span id="danken" class="german"><strong>jdm danken</strong></span>, remercier qq ; <em>sich bei jemandem für etwas <span id="bedanken" class="german"><strong>bedanken</strong></span></em>, remercier (exprimer sa gratitude) à qq pour qch
+<ul>
+<li><em>etw jdm verdanken</em>, être redevable de qch à qq<br />
+</li>
+</ul></li>
+<li><em>jdm für etw <span id="dankbar" class="german"><strong>dankbar</strong></span> sein</em>, être reconnaissant envers qn de qc, <em>sich jdm gegenüber dankbar erweisen</em>,se montrer reconnaissant(e) envers qn<br />
+</li>
+<li><em>ab-danken</em>, abdiquer, démissionner ; <em>die Ab-dankung</em>, l’abdication,[Suisse] les obsèques<br />
+</li>
+</ul></li>
+<li><span id="decken" class="german"><strong>decken</strong></span> (+ <em>über</em>) couvrir (<em>sich -</em> se recouper, coincider)
+<ul>
+<li>[<strong>die Decke</strong>]{.german #die Decke} la couverture<br />
+</li>
+<li><em>zu-decken</em> (+ <em>mit</em>) recouvrir<br />
+</li>
+<li><em>ab-decken</em> découvrir, ôter la couverture
+<ul>
+<li><em>das Abdecker</em>, l’équarisseur (retire la couverture de l’animal) ;<br />
+</li>
+</ul></li>
+<li><em>be-decken</em> recouvrir quelque chose<br />
+</li>
+<li><em>das Deck</em> le pont (qui couvre la partie supérieure du bateau), <em>an Deck gehen</em><br />
+</li>
+<li><span id="Dach" class="german"><strong>das Dach</strong></span> le toît <span class="etym">cf. anglais thatch de þæc</span><br />
+</li>
+</ul></li>
+<li><span id="drehen" class="german"><strong>drehen</strong></span> tourner <span class="etym">apparenté au lat. <em>terere</em>, frotter qui a donné le fr. <em>tourner</em></span>
+<ul>
+<li><em>herumdrehen</em> tourner autour, <em>die Drehung</em> la rotation, <em>das Drehmoment</em>, le moment de rotation, <em>die Drehbank</em> le tour à usiner, <em>die Drehtür</em> la porte tournante, <em>die Drehscheibe</em> le plateau tournant, <em>die Drehzahl</em> le nombre de tours, <em>der Dreher</em> le tourneur, <em>der Dreh</em> le tour, l’astuce</li>
+<li><em>der Dreh</em> le tournage, <span id="drehen" class="german"><strong>einen Film drehen</strong></span> tourner un film, <em>das Drehbuch</em> le scénario, <em>der Drehort</em> le lieu de tournage<br />
+</li>
+<li><em>- an einem Kopf</em>, un bouton ; <em>etw lauter/leiser</em>, monter baisse le son de qch, <em>ab/auf-drehen</em> éteindre/allumer en tournant, <em>ein/raus-drehen</em> (dé)visser<br />
+</li>
+<li><em>sich um etw drehen</em>, tourner autour de, <em>sich nach rechts/links</em>, se tourner à droite/gauche), <em>umdrehen</em> se retourner<br />
+-[fam.] <em>wie man es auch dreht und wendet</em>, qu’on prenne le problème par n’importe quel bout, <em>daran ist nichts zu drehen und zu deuteln</em> il n’y a pas à épiloguer là-dessus, <em>sich drehen und winden</em>, tergiverser, <em>jdm dreht sich alles</em> qn a la tête qui tourne<br />
+</li>
+<li>au sens figuré,<br />
+</li>
+<li><em>durchdrehen</em> péter les plombs, <em>jemandem einen Strick drehen</em> tendre un piège à quelqu’un, <em>den Spieß umdrehen</em> inverser les rôles</li>
+</ul></li>
+</ul>
+<h2 id="g"><span class="german">G</span></h2>
+<ul>
+<li>[<strong>gelb</strong>]{.german #<strong>gelb</strong>}
+<ul>
+<li><span class="etym"></span></li>
+<li><em><span id="vergilben" class="german">vergilben</span></em>, jaunir</li>
+<li><em>die <span id="Galle" class="german">Galle</span></em></li>
+<li><em>der <span id="Glas" class="german">Glas</span></em></li>
+<li><em><span id="glanz" class="german">glanz</span></em>
+<ul>
+<li><em><span id="glänzen" class="german">glänzen</span></em></li>
+<li><em><span id="gleißen" class="german">gleißen</span></em>
+<ul>
+<li><em><span id="glitzern" class="german">glitzern</span></em></li>
+</ul></li>
+</ul></li>
+<li><em><span id="glimmen" class="german">glimmen</span></em>
+<ul>
+<li><em><span id="glimmern" class="german">glimmern</span></em></li>
+<li>der <span id="Glimmer" class="german">Glimmer</span></li>
+</ul></li>
+<li><em><span id="glühen" class="german">glühen</span></em>
+<ul>
+<li><em><span id="Glut" class="german">Glut</span></em></li>
+</ul></li>
+<li><em><span id="glotzen" class="german">glotzen</span></em></li>
+<li><em><span id="glatt" class="german">glatt</span></em>
+<ul>
+<li><em><span id="Glatze" class="german">die Glatze</span></em></li>
+</ul></li>
+<li><em><span id="gleiten" class="german">gleiten</span></em>
+<ul>
+<li><em><span id="glitschen" class="german">glitschen</span></em></li>
+</ul></li>
+<li><em>das <span id="Chlor" class="german">Chlor</span></em>
+<ul>
+<li><span class="etym">Même racine qye le lat. <em>helvus</em>, jaune miel, le gr. <em>chlōrós</em>, vert jaune</span></li>
+</ul></li>
+</ul></li>
+<li><span id="Gott" class="german"><strong>der Gott (die Göttin)</strong></span> le dieu, la déesse
+<ul>
+<li><em><span class="german">der <span id="AbGott">AbGott</span></span></em>, l’idole
+<ul>
+<li><em><span class="german">der <span id="Abgötterei">Abgötterei</span></span></em>, l’idolâtrie</li>
+<li><em><span class="german"><span id="abgöttisch">abgöttisch</span></span></em>, idolâtre<br />
+</li>
+</ul></li>
+<li>[Prov.] <em>leben wie Gott in Frankreich</em> (fam.) vivre comme un coq en pâte; <em>über Gott und die Welt reden</em> (fam.) parler de tout et de rien; <em>weiß Gott nicht</em> (fam.) certainement pas; <em>um Gottes willen</em>! mon Dieu!; <em>ich bitte Sie/dich um Gottes willen</em> pour l’amour de Dieu!<br />
+</li>
+</ul></li>
+<li><span id="Grund" class="german"><strong><span class="german">der <span id="Grund">Grund</span></span></strong></span> (pl. Gründe)
+<ul>
+<li>la raison, la cause<br />
+</li>
+<li>le sol ;
+<ul>
+<li><em><span class="german">der <span id="Abgrund"><a href="#Ab">Ab</a>grund</span></span></em>, l’abîme, le gouffre</li>
+<li><em><span class="german"><span id="abgründig">abgründig</span></span></em>, insondable</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="h"><span class="german">H</span></h2>
+<ul>
+<li><em><span class="german">der Halfter</span></em>, le licou
+<ul>
+<li><em><span class="german">abhalftern</span></em>, débrider</li>
+</ul></li>
+</ul>
+<h2 id="k"><span class="german">K</span></h2>
+<ul>
+<li><strong><span class="german">der <span id="Stahl">Stahl</span></span></strong>, l’acier
+<ul>
+<li><span class="etym">de l’ancien germanique stahel pour dur</span></li>
+<li>sens originel, <span class="german"><em>stahlhart</em></span>, dur comme l’acier (XIXe) ; <em><span class="german">stählen</span></em>, rendre dur comme l’acier</li>
+<li><em><span class="german">stählern</span></em> en acier</li>
+<li>en dérive, les nombreux composés : <a href="#edel">Edel</a>stahl, inox ; <em><span class="german">Kohlenstoffstahl</span></em> ou <em><span class="german">Karbonstahl</span></em></li>
+</ul></li>
+</ul>
+<h2 id="t"><span class="german">T</span></h2>
+<ul>
+<li><em><span class="german">der Tal</span></em>, la vallée
+<ul>
+<li><span class="etym">cf. l’anglais <em>dale</em>, le norrois <em>dalr</em> ou l’ancien anglais <em>dæl</em>, apparenté à l’origine au grec thólos, coupole et vient d’un terme IE exprimant la courbure</span></li>
+<li><em><span class="german">die Delle</span></em>, la bosse, le creux</li>
+<li><em><span class="german">die Tülle</span></em>, le bec verseur</li>
+</ul></li>
+</ul>
+<h2 id="w"><span class="german">W</span></h2>
+<ul>
+<li><span id="wissen" class="german"><strong><span class="german">wissen</span></strong></span>
+<ul>
+<li><em><span class="german">der <span id="Witz">Witz</span></span></em>, l’esprit puis la plaisanterie
+<ul>
+<li><em><span class="german">witzig</span></em>, plein d’esprit, inventif et <em>gewitzigt</em>, expérimenter</li>
+<li><em><span class="german">der Witz<a href="#bald">bold</a></span></em>, le plaisantin</li>
+<li><em><span class="german">der <a href="#aber">Aber</a>witz</span></em>, l’absurdité<br />
+</li>
+<li><em><span class="german">witzeln</span></em>, se moquer</li>
+</ul></li>
+</ul></li>
+</ul>
 </body>
-
 </html>
