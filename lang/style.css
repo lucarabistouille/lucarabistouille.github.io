@@ -1,3 +1,15 @@
+
+.controls {
+  margin-bottom: 1rem;
+}
+
+
+button {
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
 body {
   max-width:120ch;
 }
@@ -6,8 +18,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: white; /* or your site's background */
   text-align: center;
+  background-color: white;
   font-size: 1.1em;
   padding: 0.5em 1em;
   border-bottom: 1px solid #eee;
@@ -118,3 +130,110 @@ ul ul ul ul {
   color: red;
   font-style: italic; /* optional */
 }
+
+@font-face {
+  font-family: 'WiegelKurrent';
+  src: url('WiegelKurrentMedium-MW6e.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'UnifrakturMaguntia';
+  src: url('UnifrakturMaguntia.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GlSuetterlin';
+  src: url('GlSuetterlin-j710.otf') format('opentype');
+}
+
+/* Texte allemand en Antiqua par défaut */
+.german {
+  transition: font-family 0.3s ease-in-out;
+}
+
+/* Petits boutons discrets */
+.controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.controls input[type="range"] {
+  width: 150px;
+  height: 3px;
+  appearance: none;
+  background: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #444;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.font-label {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* Style du bouton */
+.dark-toggle {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+#toggleDark {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#toggleDark:hover {
+  background-color: #ddd;
+}
+
+/* Mode nuit */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .toc  {
+  background-color: #121212;
+}  
+
+body.dark-mode a {
+  color: #ff7676;
+}
+
+body.dark-mode .font-label {
+  color: #bbb;
+}
+
+body.dark-mode #toggleDark {
+  background-color: #333;
+  color: #f1f1f1;
+  border-color: #666;
+}
+
+body.dark-mode #toggleDark:hover {
+  background-color: #444;
+}
+
+
+body.dark-mode h2  {
+  color: #ff7676;
+}  
+
