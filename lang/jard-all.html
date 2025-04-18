@@ -161,14 +161,14 @@
 <!--  -->
 <hr />
 <p>Un recueil personnel de vocabulaire et de notes prises au gré de ma lecture du Herkunftswörterbuch (Duden), organisé par famille étymologique sur le modèle d’anciens manuels.</p>
+<div id="tocToggleWrapper">
+<p><button id="toggleToc" onclick="toggleToc()">⬆</button></p>
+</div>
 <div class="toc">
 <p><span class="german"><a href="#a">A</a> <a href="#b">B</a> <a href="#c">C</a> <a href="#d">D</a> <a href="#e">E</a> <a href="#f">F</a> <a href="#g">G</a> <a href="#h">H</a> <a href="#i">I</a> <a href="#j">J</a> <a href="#k">K</a> <a href="#l">L</a> <a href="#m">M</a> <a href="#n">N</a> <a href="#o">O</a> <a href="#p">P</a> <a href="#q">Q</a> <a href="#r">R</a> <a href="#s">S</a> <a href="#t">T</a> <a href="#u">U</a> <a href="#v">V</a> <a href="#w">W</a> <a href="#x">X</a> <a href="#y">Y</a> <a href="#z">Z</a></span></p>
 <div class="controls">
-<p><input type="range" id="fontSlider" min="0" max="3" step="1" value="0" oninput="updateFont(this.value)"> <span id="fontName" class="font-label">Antiqua</span></p>
+<p><input type="range" id="fontSlider" min="0" max="3" step="1" value="0" oninput="updateFont(this.value)"> <span id="fontName" class="font-label">Antiqua</span> <button id="toggleDark" onclick="toggleDarkMode()">🌙</button></p>
 </div>
-<button id="toggleDark" onclick="toggleDarkMode()">
-🌙
-</button>
 </div>
 <hr />
 <h2 id="a"><span class="german">A</span></h2>
@@ -398,7 +398,7 @@
 <ul>
 <li><span class="etym">Mot d’origine peu claire, qui aurait été répandu par les moines irlandais, qui portaient des cloches. Cf. français <em>cloche</em>, latin médiéval <em>clocca</em>, anglais ancien <em>clucge</em> qui a donné <em>clock</em></span></li>
 <li>diminutif, <span class="german"><em>das Glöckchen</em></span></li>
-<li>dans le contexte liturgique, pl. <em>die Glocken</em> pour les clochettes, et le coup de cloche se dit <span class="german"><em>das Glockenzeichen</em></span>, traduction proche du latin <em>signum dare</em></li>
+<li>dans le contexte liturgique, pl. <em><span class="german">die Glocken</span></em>, ou <em><span class="german">die Altarglocke</span></em> pour les clochettes, et le coup de cloche se dit <span class="german"><em>das Glockenzeichen</em></span>, traduction proche du latin <em>signum dare</em></li>
 <li>Quelques dérivés usuels :
 <ul>
 <li><em><span class="german">das Glockenspiel</span></em>, le carillon ou le glockenspiel<br />
