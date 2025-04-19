@@ -28,11 +28,11 @@ body {
 }
 
 .toc {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: all 0.3s ease
 }
 .toc.hidden {
   transform: translateY(-100%);
-  opacity: 0;
+  position:static;
   pointer-events: none;
 }
 
