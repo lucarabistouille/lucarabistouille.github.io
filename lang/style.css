@@ -280,3 +280,7 @@ body.dark-mode h2  {
   color: #ff7676;
 }  
 
+/* Liens décalés par le menu */
+[id] {
+  scroll-margin-top: 5em;
+}
